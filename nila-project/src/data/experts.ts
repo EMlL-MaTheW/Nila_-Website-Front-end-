@@ -1,0 +1,47 @@
+
+export const expertsData: CategoryExperts[] = [
+    {
+      category: "Psychologists",
+      experts: [
+        {
+          id: "1",
+          name: "Celina Binu",
+          title: "Consultant Psychologist",
+          image: "https://i.pravatar.cc/150?u=expert1",
+          experience: "5 years exp",
+          therapyHours: "450+ Therapy Hours ⚡",
+          expertise: ["Stress", "Relationships"],
+          videoDuration: "1:47",
+          progress: "1/3",
+          nextSlot: "Tomorrow, 10:00 AM",
+          price: 1500,
+        },
+        {
+          id: "2",
+          name: "Dr. Ria",
+          title: "Clinical Psychologist",
+          image: "https://i.pravatar.cc/150?u=expert2",
+          experience: "7 years exp",
+          therapyHours: "750+ Therapy Hours ⚡",
+          expertise: ["Anxiety", "Depression", "OCD"],
+          videoDuration: "2:15",
+          progress: "2/5",
+          nextSlot: "Tomorrow, 2:00 PM",
+          price: 1800,
+        },
+        {
+          id: "3",
+          name: "Leena Mary Mathew",
+          title: "Consultant Psychologist",
+          image: "https://i.pravatar.cc/150?u=expert3",
+          experience: "6 years exp",
+          therapyHours: "600+ Therapy Hours ⚡",
+          expertise: ["Trauma", "Self-esteem"],
+          videoDuration: "1:30",
+          progress: "1/2",
+          nextSlot: "Today, 5:00 PM",
+          price: 1600,
+        },
+      ],
+    },
+  ];
