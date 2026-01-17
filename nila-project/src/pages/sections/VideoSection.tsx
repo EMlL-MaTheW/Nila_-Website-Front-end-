@@ -10,14 +10,14 @@ const VideoSection: React.FC = () => {
         
         <div className="relative flex items-center justify-center py-32 px-8">
           <div className="text-center">
-            <svg 
+            {/* <svg 
               className="w-32 h-32 text-white mb-6 opacity-80 mx-auto" 
               fill="currentColor" 
               viewBox="0 0 24 24"
             >
               <path d="M8 5v14l11-7z"/>
-            </svg>
-            
+            </svg> */}
+             <i className="fa-solid fa-play-circle text-white text-7xl mb- opacity-80"></i>
             <p className="text-white text-2xl font-semibold tracking-wide">
               Hero Video
             </p>

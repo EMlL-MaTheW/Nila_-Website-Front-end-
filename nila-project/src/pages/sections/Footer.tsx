@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
               <ul className="space-y-3">
                 {section.items.map((item, itemIndex) => (
                   <li key={itemIndex}>
-                    <a href="#" className="text-gray-700 hover:text-white transition-colors font-medium hover:underline">
+                    <a href="#" className="text-gray-800 hover:text-white transition-colors font-medium hover:underline">
                       {item}
                     </a>
                   </li>
@@ -26,8 +26,8 @@ const Footer: React.FC = () => {
 
           <div>
             <h3 className="text-lg font-bold text-gray-900 mb-6">Connect Us</h3>
-            <p className="text-gray-700 font-medium mb-2 text-lg">+91 85909 25353</p>
-            <p className="text-gray-700 font-medium mb-6 text-lg">help@nila.me</p>
+            <p className="text-gray-800 font-medium mb-2 text-lg">+91 85909 25353</p>
+            <p className="text-gray-800 font-medium mb-6 text-lg">help@nila.me</p>
             <div className="flex gap-4">
               {["facebook-f", "instagram", "linkedin-in", "youtube"].map((icon) => (
                 <a
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm">
               {conditions.map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-700 hover:text-white transition-colors block py-1 hover:underline">
+                  <a href="#" className="text-gray-800 hover:text-white transition-colors block py-1 hover:underline">
                     {item}
                   </a>
                 </li>
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm">
               {policies.map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-700 hover:text-white transition-colors block py-1 hover:underline">
+                  <a href="#" className="text-gray-800 hover:text-white transition-colors block py-1 hover:underline">
                     {item}
                   </a>
                 </li>
@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2 lg:col-span-1 flex flex-col gap-4">
             <div>
               <h4 className="font-bold text-gray-900 text-lg mb-4">Join Our Community</h4>
-              <p className="text-gray-700 text-sm mb-6 leading-relaxed">
+              <p className="text-gray-800 text-sm mb-6 leading-relaxed">
                 Join us at Nila and let's navigate this path together!
               </p>
               <button className="bg-cyan-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-cyan-300 transition-all duration-300 shadow-lg w-full text-sm">
@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="text-center pt-8">
-          <p className="text-gray-700 text-sm font-medium">
+          <p className="text-gray-800 text-sm font-medium">
             &copy; 2026 Nila. All rights reserved.
           </p>
         </div>

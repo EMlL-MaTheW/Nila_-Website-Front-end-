@@ -5,6 +5,7 @@ import Card from "./sections/Card";
 import ExpertCard from '../components/ExpertCard'
 import Question from './sections/Question';
 import Footer from './sections/Footer';
+import '../App.css'
 
 const Home: React.FC = () => {
   return (
