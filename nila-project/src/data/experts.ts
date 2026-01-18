@@ -1,4 +1,21 @@
 
+
+// Expert Interface
+interface Expert {
+  id: string;
+  name: string;
+  title: string;
+  image: string;
+  experience: string;
+  therapyHours: string;
+  expertise: string[];
+  videoDuration: string;
+  progress: string;
+  nextSlot: string;
+  price: number;
+}
+
+
 export const expertsData: CategoryExperts[] = [
     {
       category: "Psychologists",
@@ -136,3 +153,8 @@ export const expertsData: CategoryExperts[] = [
       ],
     },
   ];
+// Category Interface
+interface CategoryExperts {
+  category: string;
+  experts: Expert[];
+}

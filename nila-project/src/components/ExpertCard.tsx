@@ -1,33 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {expertsData} from '../data/experts';
-
-// Expert Interface
-interface Expert {
-  id: string;
-  name: string;
-  title: string;
-  image: string;
-  experience: string;
-  therapyHours: string;
-  expertise: string[];
-  videoDuration: string;
-  progress: string;
-  nextSlot: string;
-  price: number;
-}
-
-// Category Interface
-interface CategoryExperts {
-  category: string;
-  experts: Expert[];
-}
+import {expertsData, } from '../data/experts';
 
 const ExpertCard: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   
-
   const getProgressWidth = (progress: string): string => {
     const [current, total] = progress.split('/').map(Number);
     return `${(current / total) * 100}%`;
