@@ -14,7 +14,6 @@ const Support: React.FC = () => {
             key={index}
             className="bg-white rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-green-600 cursor-pointer group"
           >
-            {/* Font Awesome Icon - Replace SVG with <i> tag */}
             <div className={`w-16 h-16 ${category.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-sm`}>
               <i className={`fa-solid ${category.icon} text-${category.color} text-2xl`}></i>
             </div>

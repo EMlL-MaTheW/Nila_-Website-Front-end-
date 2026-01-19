@@ -11,7 +11,6 @@ const ExpertCard: React.FC = () => {
     return `${(current / total) * 100}%`;
   };
 
-  // Filter experts by search term
   const filteredExperts = expertsData.map(category => ({
     ...category,
     experts: category.experts.filter(expert =>
@@ -23,7 +22,6 @@ const ExpertCard: React.FC = () => {
 
   return (
     <>
-      {/* Search Section */}
       <section id="section-search" className="max-w-7xl mx-auto px-6 py-8">
         <div className="bg-white rounded-2xl shadow-lg p-6 border border-green-100">
           <div className="relative">
@@ -39,12 +37,10 @@ const ExpertCard: React.FC = () => {
         </div>
       </section>
 
-      {/* Experts Section */}
       <section id="section-experts" className="max-w-7xl mx-auto px-6 py-12">
         {filteredExperts.length > 0 ? (
           filteredExperts.map((category, catIndex) => (
             <div key={catIndex} className="mb-20 last:mb-0">
-              {/* Category Header */}
               <div className="mb-12">
                 <h2 className="text-4xl font-bold bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent mb-4">
                   {category.category}
@@ -54,14 +50,12 @@ const ExpertCard: React.FC = () => {
                 </p>
               </div>
 
-              {/* Experts Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {category.experts.map((expert) => (
                   <div
                     key={expert.id}
-                    className="group bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-2 border-green-200 hover:border-green-300"
+                    className="group bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y transition-all duration-300 border-2 border-green-200 hover:border-green-300"
                   >
-                    {/* Expert Header */}
                     <div className="flex items-start gap-4 mb-6">
                       <img
                         src={expert.image}
@@ -81,7 +75,6 @@ const ExpertCard: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* Stats & Expertise */}
                     <div className="mb-6">
                       <p className="text-sm font-semibold text-gray-700 mb-3">
                         {expert.therapyHours}
@@ -98,7 +91,6 @@ const ExpertCard: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* Video Progress */}
                     <div className="flex items-center gap-3 mb-6">
                       <button className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-200 group-hover:bg-green-50">
                         <i className="fa-solid fa-play text-green-600 text-sm group-hover:scale-110 transition-transform"></i>
@@ -114,7 +106,6 @@ const ExpertCard: React.FC = () => {
                       </span>
                     </div>
 
-                    {/* Availability & Price */}
                     <div className="flex items-center justify-between mb-6">
                       <div className="space-y-1">
                         <p className="text-xs text-gray-500">Next available slot</p>
@@ -128,7 +119,6 @@ const ExpertCard: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* Book Button */}
                     <Link
                       to={`/experts/${expert.id}`}
                       className="w-full block bg-gray-900 text-white py-4 rounded-2xl font-semibold text-center hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl group-hover:-translate-y-1"
