@@ -1,4 +1,6 @@
+// Attached <Link> for all navigations.   
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,46 +22,67 @@ const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#247336] to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
-              {/* <svg 
-                className="w-5 h-5 text-white" 
-                fill="currentColor" 
-                viewBox="0 0 20 20"
-              >
-                <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
-              </svg> */}
+          
+          <Link to="/" className="flex items-center gap-3 group hover:scale-105 transition-transform">
+            <div className="w-10 h-10 bg-gradient-to-br from-[#247336] to-emerald-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
               <i className="fa-solid fa-leaf text-white text-xl"></i>
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-[#247336] to-emerald-600 bg-clip-text text-transparent">
               Nila
             </span>
-          </div>
+          </Link>
 
+          {/* Desktop Navigation (Home) */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#home" className="text-gray-700 hover:text-[#247336] transition-colors font-medium hover:underline underline-offset-4">
+            <Link 
+              to="/" 
+              className="text-gray-700 hover:text-[#247336] transition-all duration-300 font-medium hover:underline underline-offset-4 active:scale-95"
+            >
               Home
-            </a>
-            <a href="#about" className="text-gray-700 hover:text-[#247336] transition-colors font-medium hover:underline underline-offset-4">
+            </Link>
+            {/* About Us */}
+            <Link 
+              to="/about" 
+              className="text-gray-700 hover:text-[#247336] transition-all duration-300 font-medium hover:underline underline-offset-4 active:scale-95"
+            >
               About Us
-            </a>
-            <a href="#services" className="text-gray-700 hover:text-[#247336] transition-colors font-medium hover:underline underline-offset-4">
+            </Link>
+            {/* Services */}
+            <Link 
+              to="/services" 
+              className="text-gray-700 hover:text-[#247336] transition-all duration-300 font-medium hover:underline underline-offset-4 active:scale-95"
+            >
               Services
-            </a>
-            <a href="#counselors" className="text-gray-700 hover:text-[#247336] transition-colors font-medium hover:underline underline-offset-4">
+            </Link>
+            {/* Counselors */}
+            <Link 
+              to="/experts" 
+              className="text-gray-700 hover:text-[#247336] transition-all duration-300 font-medium hover:underline underline-offset-4 active:scale-95"
+            >
               Counselors
-            </a>
-            <a href="#resources" className="text-gray-700 hover:text-[#247336] transition-colors font-medium hover:underline underline-offset-4">
+            </Link>
+            {/* Resources */}
+            <Link 
+              to="/resources" 
+              className="text-gray-700 hover:text-[#247336] transition-all duration-300 font-medium hover:underline underline-offset-4 active:scale-95"
+            >
               Resources
-            </a>
-            <a href="#contact" className="text-gray-700 hover:text-[#247336] transition-colors font-medium hover:underline underline-offset-4">
+            </Link>
+            {/* Contact */}
+            <Link 
+              to="/contact" 
+              className="text-gray-700 hover:text-[#247336] transition-all duration-300 font-medium hover:underline underline-offset-4 active:scale-95"
+            >
               Contact
-            </a>
+            </Link>
           </nav>
-
-          <button className="bg-gradient-to-r from-[#247336] to-emerald-600 text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+          {/* Sign in */}
+          <Link
+            to="/signin"
+            className="bg-gradient-to-r from-[#247336] to-emerald-600 text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 shadow-md"
+          >
             Sign In
-          </button>
+          </Link>
         </div>
       </div>
     </header>
@@ -67,4 +90,3 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
-

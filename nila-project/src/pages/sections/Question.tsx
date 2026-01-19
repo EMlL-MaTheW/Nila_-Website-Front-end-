@@ -1,3 +1,4 @@
+// Question section
 import { useState } from "react";
 
 const faqs = [

@@ -1,3 +1,4 @@
+//Details for the Footer.tsx(./pages/sections/Footer.tsx)
 export const menuSections = [
     {
       title: "Service",

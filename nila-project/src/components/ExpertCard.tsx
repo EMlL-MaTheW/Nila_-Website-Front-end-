@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {expertsData, } from '../data/experts';
+
+// Experts details from expert.ts file (./data/experts.ts)
+import {expertsData, } from '../data/experts'; 
 
 const ExpertCard: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");

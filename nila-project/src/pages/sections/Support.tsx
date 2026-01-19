@@ -1,4 +1,6 @@
+// Support section
 import React from 'react';
+//Data from support.ts file (./data/support.ts)
 import { categories } from "../../data/support";
 
 const Support: React.FC = () => {

@@ -1,3 +1,4 @@
+// Footer 
 import {menuSections,conditions,policies} from '../../data/footer';
 
 const Footer: React.FC = () => {

@@ -1,3 +1,4 @@
+//Video section of the home page
 import React from 'react';
 
 const VideoSection: React.FC = () => {

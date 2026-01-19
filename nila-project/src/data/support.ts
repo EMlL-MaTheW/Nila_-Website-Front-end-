@@ -6,6 +6,7 @@ interface Category {
   bgColor: string;
 }
 
+// Data for the Support section of the home page (./pages/sections/Support.tsx)
 export const categories: Category[] = [
   {
     title: 'Consultant Psychologist',

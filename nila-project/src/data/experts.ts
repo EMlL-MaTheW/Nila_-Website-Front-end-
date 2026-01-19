@@ -15,7 +15,7 @@ interface Expert {
   price: number;
 }
 
-
+//Data for the ExpertCard.tsx (./components/ExpertCard.tsx)
 export const expertsData: CategoryExperts[] = [
     {
       category: "Psychologists",

@@ -1,3 +1,4 @@
+// This file is a part of home page
 import { Link } from "react-router-dom";
 
 const Card: React.FC = () => {
