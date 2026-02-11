@@ -122,7 +122,7 @@ const ExpertCard: React.FC = () => {
                     </div>
 
                     <Link
-                      to={`/experts/${expert.id}`}
+                      to={`/booking/${expert.id}`}
                       className="w-full block bg-gray-900 text-white py-4 rounded-2xl font-semibold text-center hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl group-hover:-translate-y-1"
                     >
                       Book Now

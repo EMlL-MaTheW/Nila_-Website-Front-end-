@@ -13,6 +13,7 @@ interface Expert {
   progress: string;
   nextSlot: string;
   price: number;
+  location: string;
 }
 
 //Data for the ExpertCard.tsx (./components/ExpertCard.tsx)
@@ -32,6 +33,7 @@ export const expertsData: CategoryExperts[] = [
           progress: "1/3",
           nextSlot: "Tomorrow, 10:00 AM",
           price: 1500,
+          location: "Mental Health Care-India"
         },
         {
           id: "2",
@@ -45,6 +47,7 @@ export const expertsData: CategoryExperts[] = [
           progress: "2/5",
           nextSlot: "Tomorrow, 2:00 PM",
           price: 1800,
+          location: "Mental Health Care-India"
         },
         {
           id: "3",
@@ -58,6 +61,7 @@ export const expertsData: CategoryExperts[] = [
           progress: "1/2",
           nextSlot: "Today, 5:00 PM",
           price: 1600,
+          location: "Mental Health Care-India"
         },
         {
             id: "4",
@@ -71,6 +75,7 @@ export const expertsData: CategoryExperts[] = [
             progress: "1/4",
             nextSlot: "Tomorrow, 11:00 AM",
             price: 1400,
+            location: "Mental Health Care-India"
         },
         {
             id: "5",
@@ -84,6 +89,7 @@ export const expertsData: CategoryExperts[] = [
             progress: "3/5",
             nextSlot: "Today, 3:00 PM",
             price: 2000,
+            location: "Mental Health Care-India"
         },
         {
             id: "6",
@@ -97,6 +103,7 @@ export const expertsData: CategoryExperts[] = [
             progress: "2/3",
             nextSlot: "Tomorrow, 9:00 AM",
             price: 2500,
+            location: "Mental Health Care-India"
         },
         {
             id: "7",
@@ -110,6 +117,7 @@ export const expertsData: CategoryExperts[] = [
             progress: "1/3",
             nextSlot: "Today, 6:00 PM",
             price: 1550,
+            location: "Mental Health Care-India"
         },
         {
             id: "8",
@@ -123,6 +131,7 @@ export const expertsData: CategoryExperts[] = [
             progress: "2/5",
             nextSlot: "Tomorrow, 1:00 PM",
             price: 1700,
+            location: "Mental Health Care-India"
         },
         {
             id: "9",
@@ -136,6 +145,7 @@ export const expertsData: CategoryExperts[] = [
             progress: "1/2",
             nextSlot: "Today, 4:00 PM",
             price: 1900,
+            location: "Mental Health Care-India"
         },
         {
             id: "10",
@@ -149,6 +159,7 @@ export const expertsData: CategoryExperts[] = [
             progress: "1/3",
             nextSlot: "Tomorrow, 3:30 PM",
             price: 1450,
+            location: "Mental Health Care-India"
         }
       ],
     },

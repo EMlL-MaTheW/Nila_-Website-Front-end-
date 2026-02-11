@@ -1,8 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import BookingSession from './pages/BookingSession'
+import Verifivation from './pages/booking/Verification'
+import PaymentPage from "./pages/Payment";
 
 import "./app.css";
+import UserDashboard from "./pages/UserDashboard";
 
 // Main App Component
 const App: React.FC = () => {
@@ -11,6 +15,13 @@ const App: React.FC = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="booking/" element={<BookingSession />} />
+        <Route path="/booking/:id" element={<BookingSession />} />
+        <Route path="/book/:id" element={<Verifivation />} />
+        <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/payment/:id" element={<PaymentPage />} />
+
+        <Route path="dashboard/" element={<UserDashboard />} />
       </Routes>
     </>
   );
